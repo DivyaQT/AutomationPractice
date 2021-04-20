@@ -1,9 +1,10 @@
 Feature: UpdateInformation
     
-  Background:
-    Given I am on the AutomationPractice website
-    
   #TC ID - UpdateInformation#1
   Scenario: Update Personal Information(First Name) in My Account
-    When I select an item from the items displayed on the front page
-    Then I see the item from front page is added to the cart
+  	Given I am on the Automation Practice website
+    When I SignIn to the website
+    And I click on the account name
+    And I click on My Personal Information
+    And I enter the details to update my First name
+    Then I see First name is updated in My Account
