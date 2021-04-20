@@ -5,6 +5,7 @@ import com.Test.pages.PlaceOrderPage;
 import cucumber.api.java.en.Given;
 import net.thucydides.core.steps.ScenarioSteps;
 
+@SuppressWarnings("serial")
 public class PlaceOrderSteps extends ScenarioSteps {
 
 	PlaceOrderPage placeOrderPage;
@@ -12,10 +13,10 @@ public class PlaceOrderSteps extends ScenarioSteps {
 	/********************************************************************
 	 * Description: Launches the AutomationPractice website
 	 ********************************************************************/   
-	 @Given("^I am on the AutomationPractice website$")
+	 @Given("^I am on the Automation Practice website$")
     public void givenIAmOnTheAutomationPracticeWebsite()
     {
-		 placeOrderPage.open();
+		 getDriver().get("http://automationpractice.com");
 		 placeOrderPage.waitSeconds(5);
     }
 
