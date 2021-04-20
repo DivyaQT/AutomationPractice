@@ -1,0 +1,8 @@
+serenity.project.name=DivyaLNarayan
+
+webdriver.driver=chrome
+webdriver.chrome.driver=src/test/resource/drivers/chromedriver-mac-64bit
+
+serenity.browser.width=1280
+serenity.browser.height=960
+serenity.take.screenshots=AFTER_EACH_STEP
